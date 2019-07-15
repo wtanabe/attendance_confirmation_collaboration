@@ -1,0 +1,10 @@
+#attend_button {
+	display: flex;
+	flex-direction: column;
+}
+
+#attend_button input{
+	width: 20%;
+	margin 0 auto
+}
+
