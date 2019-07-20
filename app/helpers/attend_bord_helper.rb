@@ -1,0 +1,2 @@
+module AttendBordHelper
+end
