@@ -23,3 +23,8 @@ vendor/bundle
 # Ignore Byebug command history file.
 .byebug_history
 .DS_Store
+
+# Ignore other unneeded files.
+app/models
+test/fixtures
+test/models
