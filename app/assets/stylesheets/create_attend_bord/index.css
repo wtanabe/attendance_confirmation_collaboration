@@ -1,0 +1,29 @@
+.attend-header-schedule {
+  width: 40px;
+  text-align: center;
+}
+
+.attend-header-comment {
+  width: 120px;
+  text-align: center;
+}
+
+.attend-header-schedule-delete {
+  width: 160px;
+  text-align: center;
+}
+
+.attend-input-schedule {
+  width: 40px;
+  text-align: center;
+}
+
+.attend-input-comment {
+  width: 120px;
+  text-align: center;
+}
+
+.attend-input-schedule-delete {
+  width: 160px;
+  text-align: center;
+}
