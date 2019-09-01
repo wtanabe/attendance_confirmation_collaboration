@@ -447,43 +447,6 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 			event.preventDefault();
 		});
 
-		// Click A Day
-		// $(document.body).on("click touchstart", parent + " .monthly-day", function (event) {
-		// 	// If events, show events list
-		// 	var whichDay = $(this).data("number");
-		// 	if(options.mode === "event" && options.eventList) {
-		// 		var	theList = $(parent + " .monthly-event-list"),
-		// 			myElement = document.getElementById(uniqueId + "day" + whichDay),
-		// 			topPos = myElement.offsetTop;
-		// 		theList.show();
-		// 		theList.css("transform");
-		// 		theList.css("transform", "scale(1)");
-		// 		$(parent + ' .monthly-list-item[data-number="' + whichDay + '"]').show();
-		// 		theList.scrollTop(topPos);
-		// 		viewToggleButton();
-		// 		if(!options.linkCalendarToEventUrl) {
-		// 			event.preventDefault();
-		// 		}
-		// 	// If picker, pick date
-		// 	} else if (options.mode === "picker") {
-		// 		var	setMonth = $(parent).data("setMonth"),
-		// 			setYear = $(parent).data("setYear");
-		// 		// Should days in the past be disabled?
-		// 		if($(this).hasClass("monthly-past-day") && options.disablePast) {
-		// 			// If so, don't do anything.
-		// 			event.preventDefault();
-		// 		} else {
-		// 			// Otherwise, select the date ...
-		// 			$(String(options.target)).val(formatDate(setYear, setMonth, whichDay));
-		// 			// ... and then hide the calendar if it started that way
-		// 			if(options.startHidden) {
-		// 				$(parent).hide();
-		// 			}
-		// 		}
-		// 		event.preventDefault();
-		// 	}
-		// });
-
 		// Clicking an event within the list
 		$(document.body).on("click", parent + " .listed-event", function (event) {
 			var href = $(this).attr("href");
