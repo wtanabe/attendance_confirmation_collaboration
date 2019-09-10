@@ -22,6 +22,5 @@ window.addEventListener('load', function() {
 		var obj = event.target;
 		console.log($(".attend-input-schedule-delete").index(obj));
 		$(this).closest('tr').remove();
-
 	});
 })
