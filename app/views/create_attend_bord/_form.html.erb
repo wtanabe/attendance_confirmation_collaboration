@@ -1,0 +1,9 @@
+<%= form_for(@event_date,url: {action: "new"}) do |f| %>
+  <div class="field">
+    <%= f.label 9/23 %>
+    <%= f.text_field :event_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit "作成完了"%>
+  </div>
+<% end %>

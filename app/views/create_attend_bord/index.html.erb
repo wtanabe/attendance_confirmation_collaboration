@@ -3,14 +3,16 @@
   <div id="schedule_message">以下のカレンダから日程を選んでください。</div>
   <div id=calendar></div>
   <div class="monthly" id="mycalendar"></div>
-  <table id="attend-input-table">
-    <tr id="cols">
-      <th class="attend-header-schedule">日程</th>
-      <th class="attend-header-comment">コメント</th>
-      <th class="attend-header-schedule-delete">日程削除</th>
-    </tr>
-  </table>
-  <div>
-    <input type="button" id="created" value="作成完了">
-  </div>
+  <form action="new" method="POST">
+    <table id="attend-input-table">
+      <tr id="cols">
+        <th class="attend-header-schedule">日程</th>
+        <th class="attend-header-comment">コメント</th>
+        <th class="attend-header-schedule-delete">日程削除</th>
+      </tr>
+    </table>
+    <div>
+      <%= render 'form' , event_date: @event_date %>
+    </div>
+  </form>
 </div>
