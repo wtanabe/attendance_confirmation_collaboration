@@ -1,24 +1,14 @@
-# README
+# attendance_confirmation_collaboration
+## 概要
+出欠管理システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## コマンド
+### 起動
+```
+bundle exec rails server -b 0.0.0.0
+```
+http://localhost:3000/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## テーブル定義
+以下のディレクトリで管理する
+https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/schema.rb
