@@ -1,0 +1,61 @@
+#main-frame {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#main-frame *{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.attend-header-schedule {
+  width: 46px;
+  text-align: center;
+}
+
+.attend-header-comment {
+  width: 106px;
+  text-align: center;
+}
+
+.attend-header-schedule-delete {
+  width: 100px;
+  text-align: center;
+}
+
+.attend-td-schedule {
+  width: 40px;
+  text-align:center;
+}
+
+.attend-td-comment {
+  width: 100px;
+  text-align:center;
+}
+
+.attend-td-schedule-delete {
+  width: 100px;
+  text-align:center;
+}
+
+.attend-input-schedule {
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.attend-input-comment {
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.attend-input-schedule-delete {
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#created {
+  text-align: center;
+}
