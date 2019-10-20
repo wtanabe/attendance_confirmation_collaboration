@@ -10,40 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190803020454) do
+ActiveRecord::Schema.define(version: 20191020061041) do
 
   create_table "attendances", force: :cascade do |t|
-    t.string   "event_date_id",         limit: 10, null: false
-    t.string   "event_date_comment_id", limit: 10
-    t.string   "participant_id",        limit: 10, null: false
-    t.integer  "attendance",            limit: 1,  null: false
-    t.boolean  "delete_flg",            limit: 1
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-  end
-
-  create_table "event_date_comments", force: :cascade do |t|
-    t.string   "event_date_id",      limit: 10, null: false
-    t.string   "event_date_comment", limit: 20, null: false
-    t.boolean  "delete_flg",         limit: 1
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.string   "event_date_id",  limit: 10, null: false
+    t.string   "participant_id", limit: 10, null: false
+    t.integer  "attendance",     limit: 1,  null: false
+    t.boolean  "delete_flg",     limit: 1
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "event_dates", force: :cascade do |t|
-    t.string   "event_id",   limit: 10, null: false
-    t.string   "event_date", limit: 8,  null: false
-    t.boolean  "delete_flg", limit: 1
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-  end
-
-  create_table "events", force: :cascade do |t|
-    t.string   "event_name",    limit: 30,  null: false
-    t.string   "event_content", limit: 200
-    t.boolean  "delete_flg",    limit: 1
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "event_id",           limit: 10, null: false
+    t.string   "event_date",         limit: 8,  null: false
+    t.boolean  "delete_flg",         limit: 1
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "event_name"
+    t.string   "event_date_comment"
   end
 
   create_table "participants", force: :cascade do |t|
