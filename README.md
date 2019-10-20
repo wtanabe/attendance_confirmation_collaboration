@@ -7,6 +7,7 @@
 ```
 bundle exec rails server -b 0.0.0.0
 ```
+http://localhost:3000/
 
 ## テーブル定義
 以下のディレクトリで管理する
