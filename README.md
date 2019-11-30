@@ -17,4 +17,4 @@ https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/
 # 機能一覧
 
 # 出欠ボード_初期画面
-![出欠ボード_初期画面](image/出欠ボード_初期画面.png)
+![出欠ボード_初期画面](https://github.com/wtanabe/attendance_confirmation_collaboration/tree/issue_%2335/image/出欠ボード_初期画面.png)
