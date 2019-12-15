@@ -14,10 +14,15 @@ http://localhost:3000/
 https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/schema.rb
 
 ## 外部設計書
-# 機能一覧                                          |
+# 機能一覧                                         
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 
 ## 出欠ボード_初期画面
 ![出欠ボード_初期画面](https://user-images.githubusercontent.com/17742203/70805206-b9d59300-1dfb-11ea-9713-4c4f221b71a9.png)
+機能一覧
+
 
 ## 出欠ボード_出欠記入ボタン押下時
 ![出欠ボード_出欠記入ボタン押下時](https://user-images.githubusercontent.com/17742203/70808405-f789ea00-1e02-11ea-8df3-be56f7afc566.png)
