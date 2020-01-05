@@ -50,9 +50,9 @@ https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/
 | /   | 出欠ボード情報取得 | select | 以下の画面にも同じ機能が存在する。<br>・出欠ボード編集画面 |
 
 #### ・URLとテーブルの対応表
-| | attendance | event_date	| event_date_comment	| participant	| event	|
-| --- | --- |  --- | --- | --- | --- |
-| /	| ● |	●	| ● |	●	| ●	|
+| | attendance | event_date	| participant	|
+| --- | --- |  --- | --- |
+| /	| ● |	●	| ● |
 
 ### ◯出欠ボード_出欠記入ボタン押下時
 ![出欠ボード_出欠記入ボタン押下時](https://user-images.githubusercontent.com/17742203/70808405-f789ea00-1e02-11ea-8df3-be56f7afc566.png)
@@ -75,9 +75,9 @@ https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/
 | /add | 出欠追加処理 | insert |
 
 #### ・URLとテーブルの対応表
-|   | attendance | event_date | event_date_comment | participant | event |
-|------|------------|------------|--------------------|-------------|-------|
-| /add | ●          |            |                    | ●           |       |
+|   | attendance | event_date | participant |
+|------|------------|------------|-------------|
+| /add | ●          |            | ●           |
 
 ### ◯出欠ボード_出欠変更ボタン押下時
 ![出欠ボード_出欠変更ボタン押下時](https://user-images.githubusercontent.com/17742203/70808435-05d80600-1e03-11ea-873e-755bbf6d7d0b.png)
@@ -100,9 +100,9 @@ https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/
 | /change	| 出欠変更処理	| update	 | 1.押下した名前のparticipant_idに基づいてparticipant,attendanceの削除フラグをupdateで1にする。<br>2.出欠追加処理と同じSQLを実行する。                                          |                                           |
 
 #### ・URLとテーブルの対応表
-| | attendance | event_date | event_date_comment | participant | event |                                           
-|---------------|-------------------|---------------|-------------|----------------------------|---------------|
-| /change	| ● | | | | |
+| | attendance | event_date | participant |                                          
+|---------------|-------------------|---------------|----------------------------|
+| /change	| ● | | |
 
 ### ◯出欠ボード_出欠削除ボタン押下時
 ![出欠ボード_出欠削除ボタン押下時](https://user-images.githubusercontent.com/17742203/70808261-a548c900-1e02-11ea-8149-f0b63b8393cf.png)
@@ -125,9 +125,9 @@ https://github.com/wtanabe/attendance_confirmation_collaboration/blob/master/db/
 | /delete | 出欠削除処理 | update | 1.押下した名前のparticipant_idに基づいてparticipant,attendanceの削除フラグをupdateで1にする。 |
 
 #### ・URLとテーブルの対応表
-|      | attendance | event_date | event_date_comment | participant | event |
-|---------|------------|------------|--------------------|-------------|-------|
-| /delete | ●          |            |                    | ●           |       |
+|      | attendance | event_date | participant |
+|---------|------------|------------|-------------|
+| /delete | ●          |            | ●           |
 
 ### ◯出欠ボード作成
 ![出欠ボード作成](https://user-images.githubusercontent.com/17742203/70808319-c0b3d400-1e02-11ea-9b04-badc092a161a.png)
@@ -153,10 +153,10 @@ URL | 処理 | CRUD
 
 #### ・URLとテーブルの対応表
 
-| | attendance | event_date | event_date_comment | participant | event
---- | --- | --- | --- | --- | ---
-/create |  | ● | ● |  | ●
-/create/new |  | ● | ● |  | ●
+| | attendance | event_date | participant |
+--- | --- | --- | --- |
+/create |  | ● |  |
+/create/new |  | ● |  |
 
 
 ### ◯出欠ボード編集
@@ -183,10 +183,13 @@ URL | 処理 | CRUD | 備考
 
 #### ・URLとテーブルの対応表
 
-|                                        | attendance | event_date | event_date_comment | participant | event |                                                                                                                                  |
-|--------------------------------------------|------------|------------|--------------------|-------------|-------|----------------------------------------------------------------------------------------------------------------------------------|
-| /create                                    |            | ●          | ●                  |             | ●     |                                                                                                                                  |
-| /create/edit                               | ●          | ●          | ●                  | ●           |       | 1.画面に保存してあるevent_idに基づいてattendance,event_date,event_date_comment,participant eventの削除フラグをupdateで1にする。 <br>2.出欠ボード作成処理と同じSQLを実行する。 |            |            |                    |             |       |                                                                                                                                  |
+|                                        | attendance | event_date | participant |
+|--------------------------------------------|------------|------------|-------------|
+| /create                                    |            | ●          |             |
+| /create/edit※1                               | ●          | ●          | ●           | 
+
+※1<br>
+1.画面に保存してあるevent_idに基づいてattendance,event_date,event_date_comment,participant eventの削除フラグをupdateで1にする。 <br>2.出欠ボード作成処理と同じSQLを実行する。 
 
 ## 画面遷移図
 ![画面遷移図・画面定義一覧](https://user-images.githubusercontent.com/17742203/70808285-b1cd2180-1e02-11ea-8ca9-d0cc2fa793b2.png)
